@@ -23,6 +23,10 @@ h2
 {
     font-size: 2.6rem;
 }
+h3
+{
+    font-size: 1.4rem;
+}
 .slogan
 {
     font-size: 1.8rem;
@@ -99,8 +103,75 @@ header
     border-top-right-radius: .2rem;
     border-bottom-right-radius: .2rem;
 }
-
 .logo
 {
     width: 7rem;
+}
+
+/* IDIOMS GRID SECTION */
+.idioms-grid-parent
+{
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    grid-row-gap: 1rem;
+    /* border: .1rem solid red; */
+}
+.idioms-grid-parent p
+{
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    word-spacing: .1rem;
+}
+.grid-child
+{
+    text-align: center;
+}
+.idioms-grid-parent .idiom-title
+{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-bottom: .5rem;
+}
+
+.spanish
+{
+    grid-area:  1 / 1 / 2 / 2;
+}
+.english
+{
+    grid-area:  1 / 2 / 2 / 3;
+}
+.japanese
+{
+    grid-area:  1 / 3 / 2 / 4;
+}
+.german
+{
+    grid-area:  2 / 1 / 3 / 2;
+}
+.russian
+{
+    grid-area:  2 / 2 / 3 / 3;
+}
+.french
+{
+    grid-area:  2 / 3 / 3 / 4;
+}
+.chinese
+{
+    grid-area:  3 / 1 / 4 / 2;
+}
+.italian
+{
+    grid-area:  3 / 2 / 4 / 3;
+}
+.portuguese
+{
+    grid-area:  3 / 3 / 4 / 4;
+}
+.polish
+{
+    grid-area:  4 / 1 / 5 / 2;
 }
